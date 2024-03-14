@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.8 on win32)" generated="2024-03-14T11:35:48.647147" rpa="false" schemaversion="5">
+<suite id="s1" name="Valid" source="c:\Users\hnadeem\Documents\Testing Login\valid.robot">
+<test id="s1-t1" name="Valid Login" line="10">
+<kw name="Open Browser To Login Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-14T11:35:48.837169" level="INFO">Opening browser 'googlechrome' to base url 'http://localhost:7272'.</msg>
+<arg>http://localhost:7272</arg>
+<arg>googlechrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-14T11:35:48.837169" elapsed="1.876223"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-03-14T11:35:50.727391" level="INFO">Page title is 'Login Page'.</msg>
+<arg>Login Page</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-03-14T11:35:50.714392" elapsed="0.012999"/>
+</kw>
+<status status="PASS" start="2024-03-14T11:35:48.836168" elapsed="1.892223"/>
+</kw>
+<kw name="Type in Username">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-14T11:35:50.730392" level="INFO">Typing text 'demo' into text field 'id=username_field'.</msg>
+<arg>id=username_field</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T11:35:50.729392" elapsed="0.127026"/>
+</kw>
+<arg>demo</arg>
+<status status="PASS" start="2024-03-14T11:35:50.729392" elapsed="0.128016"/>
+</kw>
+<kw name="Type in Password">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-14T11:35:50.863409" level="INFO">Typing text 'mode' into text field 'id=password_field'.</msg>
+<arg>id=password_field</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T11:35:50.863409" elapsed="0.121013"/>
+</kw>
+<arg>mode</arg>
+<status status="PASS" start="2024-03-14T11:35:50.861407" elapsed="0.124014"/>
+</kw>
+<kw name="Submit Credentials">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-14T11:35:50.995424" level="INFO">Clicking button 'id=login_button'.</msg>
+<arg>id=login_button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T11:35:50.991423" elapsed="0.494923"/>
+</kw>
+<status status="PASS" start="2024-03-14T11:35:50.988423" elapsed="0.497923"/>
+</kw>
+<kw name="Welcome Page should be open">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-03-14T11:35:51.497345" level="INFO">Page title is 'Welcome Page'.</msg>
+<arg>Welcome Page</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-03-14T11:35:51.488346" elapsed="0.010002"/>
+</kw>
+<status status="PASS" start="2024-03-14T11:35:51.487346" elapsed="0.011002"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-14T11:35:51.499347" elapsed="2.363979"/>
+</kw>
+<status status="PASS" start="2024-03-14T11:35:48.836168" elapsed="5.028156"/>
+</test>
+<status status="PASS" start="2024-03-14T11:35:48.666150" elapsed="5.200174"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Valid">Valid</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
