@@ -26,7 +26,7 @@ Type in Username
 
 Type in Password
     [Arguments]    ${password}
-    Input Text    id=password_field    ${password}
+    Input Password    id=password_field    ${password}
 
 Submit Credentials
     Click Button    id=login_button
